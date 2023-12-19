@@ -1,0 +1,47 @@
+body{
+    margin: 0%;
+    
+}
+
+#container{
+animation-name: slideleft;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+width: 100%;
+}
+
+img{
+    transform:translateX(45%)  ;
+   
+}
+
+@keyframes slideleft {
+    from{transform: translateX(200px);}
+}
+
+@media screen and (max-width:480px) {
+    body, #container, img{
+        width: 100%;
+    }
+        
+    }
+@media screen and (max-width:767px) {
+    body, #container, img{
+        width: 100%;
+    }
+    
+}    
+
+@media screen and (max-width:1024px){
+    body, #container, img{
+        width: 100%;
+    }
+}
+
+#container h1{
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 5px rgb(61, 61, 61), -2px -2px 5px rgb(0, 0, 0);
+}
